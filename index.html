@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en"><head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS Links -->
+     <!--<link rel="stylesheet" href="css/demo.css">-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="css/theme.default.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>JQuery plugin</title>
+  </head>
+  <body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Set up your HTML -->
+<div class="owl-carousel text-center">
+  <div class="Div"> Your Content </div>
+  <div class="Div"> Your Content </div>
+  <div class="Div"> Your Content </div>
+  <div class="Div"> Your Content </div>
+  <div class="Div"> Your Content </div>
+  <div class="Div"> Your Content </div>
+  <div class="Div"> Your Content </div>
+</div>
+
+<!--curvedtext-->
+ <div id="text1">
+    Hm, looks like the wonderful arctext plugin.
+</div>
+<!--counterup-->
+<span class="counter text -center">1,234,567.00</span>
+<span>$</span><span class="counter">1.99</span>
+<span class="counter">12345</span>
+
+    
+            </div>
+        </div>
+    </div>
+    
+    <!-- jQuery links-->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!--<script src="js/demo.js"></script>-->
+    <script src="js/jquery.throttle.js"></script>
+    <script src="js/jquery.typorize.js"></script>
+    <script src="js/jquery.curvedtext.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   <script src="js/script.js"></script>
+    <script>
+ $(document).ready(function(){
+
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
+});
+
+ jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+
+ </script>
+
+
+   
+
+    </body>
+    </html>
